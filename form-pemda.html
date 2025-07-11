@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PENERIMAAN MAHASISWA BARU TAHUN 2025 - STKIP NU Tegal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f8f9fa, #e0f2f1);
+      color: #333;
+    }
+    header {
+      background: #006633;
+      color: white;
+      padding: 20px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .header-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .header-content img {
+      width: 70px;
+      height: auto;
+    }
+    .header-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+    .header-text h1 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+    .header-text h2 {
+      font-size: 1em;
+      margin-top: 5px;
+    }
+    .tagline {
+      font-size: 0.9em;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    .container {
+      padding: 30px 10px;
+      text-align: center;
+      background: url('background-kampus.png') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: rgba(255, 255, 255, 0.85);
+      background-blend-mode: lighten;
+    }
+    .univ {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 240px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+      animation: zoomIn 0.8s ease both;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #006633;
+    }
+    .card p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: gray;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+    .card a.active {
+      background: #006633;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+    .card a.active:hover {
+      background: #004d26;
+    }
+    .download {
+      margin-top: 40px;
+    }
+    .download h2 {
+      margin-bottom: 15px;
+      color: #006633;
+    }
+    .download a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #ff6600;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.95em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .download a:hover {
+      background: #cc5200;
+    }
+    footer {
+      background: #004d26;
+      color: white;
+      text-align: center;
+      padding: 16px 10px;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+    @keyframes zoomIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+      40% {
+        transform: perspective(400px) rotateY(-10deg);
+      }
+      70% {
+        transform: perspective(400px) rotateY(10deg);
+      }
+      100% {
+        transform: perspective(400px) rotateY(0);
+        opacity: 1;
+      }
+    }
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      70% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      text-decoration: none;
+      font-size: 28px;
+    }
+    .live-chat {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+      cursor: pointer;
+    }
+  button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="logo-pemda.png" alt="Logo Pemda Kabupaten Tegal">
+      <div class="header-text">
+        <h1>PENERIMAAN MAHASISWA BARU TAHUN 2025</h1>
+        <h2>STKIP NU TEGAL - PROGRAM BEASISWA PEMERINTAHAN KABUPATEN TEGAL</h2>
+        <div class="tagline">"Wujudkan Masa Depan Cerah bersama Beasiswa Pemkab Tegal"</div>
+      </div>
+      <img src="logo-stkip.png" alt="Logo STKIP NU Tegal">
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 style="color:#004d26;">Pilihan Perguruan Tinggi Mitra</h2>
+    <div class="univ">
+      <div class="card" >
+        <img src="logo-stkip.png" alt="STKIP NU Tegal">
+        <h3>STKIP NU Tegal</h3>
+        <p>Kuota: 100 Mahasiswa</p>
+        <a href="https://forms.gle/ANWj5nURyenrnJ9L8" class="active">Daftar Sekarang</a>
+      </div>
+      <div class="card" >
+        <img src="logo-ibn.png" alt="IBN Tegal">
+        <h3>IBN Tegal</h3>
+        <p>Kuota: 75 Mahasiswa</p>
+        <a href="https://forms.gle/ANWj5nURyenrnJ9L8" onclick="return false;" title="Pendaftaran Ditutup">Daftar Sekarang</a>
+      </div>
+      <div class="card" >
+        <img src="logo-bhamada.png" alt="BHAMADA Tegal">
+        <h3>BHAMADA Tegal</h3>
+        <p>Kuota: 62 Mahasiswa</p>
+        <a href="https://forms.gle/ANWj5nURyenrnJ9L8" onclick="return false;" title="Pendaftaran Ditutup">Daftar Sekarang</a>
+      </div>
+      <div class="card" >
+        <img src="logo-tmu.png" alt="TMU Tegal">
+        <h3>TMU Tegal</h3>
+        <p>Kuota: 50 Mahasiswa</p>
+        <a href="https://forms.gle/ANWj5nURyenrnJ9L8" onclick="return false;" title="Pendaftaran Ditutup">Daftar Sekarang</a>
+      </div>
+    </div>
+
+    <div class="download">
+      <h2>Unduh Pendaftar</h2>
+      <a href="https://docs.google.com/spreadsheets/d/1so4RcRo4G1zbqnRfHnOFT3g41Y_jCsnCcGQaOh29qS0/edit?usp=sharing" target="_blank">Download Spreadsheet (.XLSX)</a>
+    </div>
+  </div>
+  <footer style="font-size: 1.1em;">
+    <p>Orang NU kuliah di STKIP NU Tegal, Orang Cerdas Kuliah di STKIP NU Tegal.</p>
+  </footer>
+
+  <section style="background:#f4f4f4; padding:20px; text-align:center;">
+  <h3>Kontak Person</h3>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin-top:10px;">
+    <p>📱 WhatsApp:<br><a href="https://wa.me/6285642571180" target="_blank">0856-4257-1180</a></p>
+    <p>📧 Instagram:<br><a href="https://www.instagram.com/p/DCtg1xGTbrk/">IG@PMBSTKIPNUTEGAL</a></p>
+    <p>📍 Alamat:<br>Jl. A. Yani Procot No. 02 Slawi Tegal (Gedung NU)</p>
+  </div>
+</section>
+
+  <a href="https://wa.me/6285642571180" class="whatsapp-button" target="_blank" title="Hubungi Kami via WhatsApp">💬</a>
+  <a class="live-chat" href="https://wa.me/6285642571180?text=Halo%2C+saya+ingin+bertanya+tentang+pendaftaran+beasiswa+PMB+2025." target="_blank">Live Chat</a>
+</body>
+</html>
